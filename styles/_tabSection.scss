@@ -21,3 +21,30 @@
         }
     }
 }
+
+#sectionHeader {
+    width: 100%;
+    height: 40px;
+    background-color: #414f6b;
+
+    button {
+        height: 40px;
+        padding: .2rem 1rem;
+
+        font-weight: 700;
+        font-family: "Oswald";
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        border: none;
+        color: #b0b4be;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #b0b4be;
+            color: #414f6b;
+            text-decoration: underline;
+        }
+    }
+}
