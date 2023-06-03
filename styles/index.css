@@ -10,4 +10,14 @@ body {
   font-family: sans-serifs;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+:root {
+  --content-max-width: 1200px;
+}
+
+.container {
+  display: block;
+  width: var(--content-max-width);
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */

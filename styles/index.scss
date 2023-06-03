@@ -12,3 +12,19 @@ body {
     font-size: 1rem;
     line-height: 1.5;
 }
+
+:root {
+    // SIZES
+    --content-max-width: 1200px;
+
+    // COLORS
+}
+
+.container {
+    display: block;
+    width: var(--content-max-width);
+    margin: 0 auto;
+}
+
+// *** ROOT AND SHARED STYLING 👆️
+// *** SECTIONS AND COMPONENTS 👇️
