@@ -213,10 +213,31 @@ header ol li a,
   text-decoration: underline;
 }
 
-#sectionBody {
-  height: auto;
-  padding: 1rem 0;
-  background-color: yellow;
+#tabOneContent {
+  padding-top: 5rem;
+  width: 100%;
+  min-height: 500px;
+  background-image: url("../assets/tab_01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#tabOneContent #scheduleCard {
+  width: 352px;
+  height: 229px;
+  background-color: rgba(255, 255, 255, 0.631372549);
+  padding: 1rem;
+  z-index: 99;
+}
+#tabOneContent #scheduleCard h3 {
+  font-family: "Oswald";
+  color: #414f6b;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#tabOneContent #scheduleCard table {
+  width: 100%;
 }
 
 footer {
