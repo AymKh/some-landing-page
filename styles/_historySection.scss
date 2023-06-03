@@ -1,6 +1,6 @@
 #historySection {
     width: 100%;
-    min-height: var--section-default-height;
+    min-height: var(--section-default-height);
     padding: 2rem 0;
     background-image: url('../assets/histry_section.png');
     @include imageBackGround();

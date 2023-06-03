@@ -1,6 +1,6 @@
 #heroSection {
     width: 100%;
-    height: var--section-default-height;
+    height: var(--section-default-height);
     z-index: 1;
 
     background-image: url('../assets/hero_section_bg.png');

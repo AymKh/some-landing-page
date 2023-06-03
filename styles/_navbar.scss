@@ -1,4 +1,5 @@
-header {
+header,
+#secondaryNavBar {
     width: 100%;
     height: var(----navbar-height);
     background-color: transparent;
@@ -27,5 +28,19 @@ header {
                 font-family: "Lato";
             }
         }
+    }
+}
+
+#secondaryNavBar {
+    padding: .8rem 0;
+    background-color: #fff;
+
+    .brandComplex {
+        @include complexBranding();
+    }
+
+    nav ol li,
+    nav ol li a {
+        color: #414f6b;
     }
 }
