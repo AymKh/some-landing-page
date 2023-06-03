@@ -29,5 +29,10 @@ body {
     margin: 0 auto;
 }
 
-// *** ROOT AND SHARED STYLING 👆️
-// *** SECTIONS AND COMPONENTS 👇️
+.showTab {
+    display: block;
+}
+
+.hideTab {
+    display: none;
+}

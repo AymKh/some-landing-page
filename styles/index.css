@@ -219,6 +219,7 @@ header ol li a,
 
 #tabTwoContent {
   background-image: url("../assets/tab_02.png");
+  display: none;
 }
 
 #tabOneContent,
@@ -314,4 +315,12 @@ body {
   display: block;
   width: var(--content-max-width);
   margin: 0 auto;
+}
+
+.showTab {
+  display: block;
+}
+
+.hideTab {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
