@@ -179,6 +179,12 @@ header ol li a {
   text-decoration: underline;
 }
 
+#sectionBody {
+  min-height: 400px;
+  padding: 1rem 0;
+  background-color: yellow;
+}
+
 *,
 html {
   margin: 0;
