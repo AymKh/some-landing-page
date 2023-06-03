@@ -1,12 +1,8 @@
 header {
     width: 100%;
-    height: 65px;
+    height: var(----navbar-height);
+    background-color: transparent;
     @include flex;
-
-    position: fixed;
-    top: 0;
-    background-color: #fff;
-    z-index: 999;
 
     .container {
         @include flex;

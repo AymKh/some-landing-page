@@ -1,6 +1,6 @@
 #tabSection {
     width: 100%;
-    min-height: 700px;
+    min-height: var(--section-default-height);
 }
 
 #tabsHeaderStrip {
