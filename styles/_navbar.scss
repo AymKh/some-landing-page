@@ -2,6 +2,7 @@ header,
 #secondaryNavBar {
     width: 100%;
     height: var(----navbar-height);
+    padding-top: .5rem;
     background-color: transparent;
     @include flex;
 

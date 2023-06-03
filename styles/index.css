@@ -9,6 +9,7 @@ header,
 #secondaryNavBar {
   width: 100%;
   height: var(----navbar-height);
+  padding-top: 0.5rem;
   background-color: transparent;
   display: flex;
   flex-direction: row;
