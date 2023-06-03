@@ -135,7 +135,6 @@ header ol li a {
 
 #tabsHeaderStrip {
   width: 100%;
-  padding: 0.5rem 1rem;
   background-color: #fff;
 }
 #tabsHeaderStrip .container {
@@ -148,6 +147,13 @@ header ol li a {
   width: auto;
   display: block;
   margin-right: 8rem;
+}
+#tabsHeaderStrip .container p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Lato";
 }
 
 #sectionHeader {
