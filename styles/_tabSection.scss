@@ -57,10 +57,18 @@
 }
 
 #tabOneContent {
+    background-image: url('../assets/tab_01.png');
+}
+
+#tabTwoContent {
+    background-image: url('../assets/tab_02.png');
+}
+
+#tabOneContent,
+#tabTwoContent {
     padding-top: 5rem;
     width: 100%;
     min-height: 500px;
-    background-image: url('../assets/tab_01.png');
     @include imageBackGround();
 
     #scheduleCard {

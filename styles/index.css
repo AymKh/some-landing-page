@@ -214,29 +214,40 @@ header ol li a,
 }
 
 #tabOneContent {
+  background-image: url("../assets/tab_01.png");
+}
+
+#tabTwoContent {
+  background-image: url("../assets/tab_02.png");
+}
+
+#tabOneContent,
+#tabTwoContent {
   padding-top: 5rem;
   width: 100%;
   min-height: 500px;
-  background-image: url("../assets/tab_01.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-#tabOneContent #scheduleCard {
+#tabOneContent #scheduleCard,
+#tabTwoContent #scheduleCard {
   width: 352px;
   height: 229px;
   background-color: rgba(255, 255, 255, 0.631372549);
   padding: 1rem;
   z-index: 99;
 }
-#tabOneContent #scheduleCard h3 {
+#tabOneContent #scheduleCard h3,
+#tabTwoContent #scheduleCard h3 {
   font-family: "Oswald";
   color: #414f6b;
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
 }
-#tabOneContent #scheduleCard table {
+#tabOneContent #scheduleCard table,
+#tabTwoContent #scheduleCard table {
   width: 100%;
 }
 
