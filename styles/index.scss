@@ -1,3 +1,5 @@
+@import "./variables";
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Oswald:wght@200;400;600;700&display=swap');
 
 *,
@@ -11,13 +13,6 @@ body {
     font-family: sans-serifs;
     font-size: 1rem;
     line-height: 1.5;
-}
-
-:root {
-    // SIZES
-    --content-max-width: 1200px;
-
-    // COLORS
 }
 
 .container {
