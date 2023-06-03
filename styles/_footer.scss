@@ -1,0 +1,26 @@
+footer {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #414f6b;
+    @include flex();
+
+    .container {
+        @include flex();
+        align-items: center;
+    }
+
+    .brandComplex {
+        @include complexBranding();
+    }
+
+    p {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #63769d;
+        font-weight: 900;
+        font-style: italic;
+        font-family: "Lato";
+    }
+}

@@ -1,0 +1,71 @@
+@mixin flex() {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin imageBackGround() {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin sectionTitle() {
+    position: relative;
+    width: fit-content;
+
+    h1 {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+
+        opacity: 0.502;
+        font-size: 8.5rem;
+        color: #414f6b;
+        font-weight: 700;
+        font-family: "Oswald";
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: #414f6b;
+            position: absolute;
+            bottom: 39px;
+            right: -25px;
+        }
+    }
+
+    h5 {
+        font-family: "Oswald";
+        font-size: 2rem;
+        font-weight: 700;
+        color: #414f6b;
+        text-transform: uppercase;
+
+        position: absolute;
+        top: 87px;
+        right: -110px;
+    }
+}
+
+@mixin complexBranding() {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+        display: block;
+        font-family: "Bebas Neue";
+        font-size: 21px;
+        letter-spacing: 0px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #63769d;
+        margin-left: .5rem;
+    }
+}

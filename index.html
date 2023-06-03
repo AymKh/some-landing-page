@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Landing Page</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+    <!-- ############## HERO SECTION ############## -->
+    <section id="heroSection">
+        <!-- ############## PRIMARY NAV ############## -->
+        <header>
+            <div class="container">
+                <div class="brand">
+                    <img src="assets/Logo.png" alt="losangeles mountains logo">
+                </div>
+                <nav>
+                    <ol>
+                        <li><a href="#historySection">history</a></li>
+                        <li><a href="#tabSection">team</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+
+        <div class="flex">
+            <div>
+                <h1>losangeles</h1>
+                <h1>mountains</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- ############## SECONDARY NAV ############## -->
+    <div id="secondaryNavBar">
+        <div class="container">
+            <div class="brandComplex">
+                <img src="./assets/Logo.png" alt="losangeles mountains logo">
+                <div>
+                    <span>losanageles</span>
+                    <span>mountains</span>
+                </div>
+            </div>
+            <nav>
+                <ol>
+                    <li><a href="#historySection">history</a></li>
+                    <li><a href="#tabSection">team</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ############## HISTORY SECTION ############## -->
+    <section id="historySection">
+        <div class="container">
+            <div id="sectoinTitle">
+                <h1>01</h1>
+                <h5>history</h5>
+            </div>
+            <div id="sectionContent">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sint esse earum doloremque velit doloribus, dolor asperiores saepe mollitia veritatis quod. Omnis autem sunt,
+                    consectetur
+                    similique eligendi iure pariatur velit exercitationem deserunt minus numquam molestias, quasi quas maiores nobis assumenda accusamus molestiae ut dolorem cupiditate atque odio
+                    iste?</p>
+            </div>
+        </div>
+
+        <div id="carrousel"></div>
+    </section>
+
+    <!-- ############## HISTORY SECTION ############## -->
+    <section id="tabSection">
+        <div id="tabsHeaderStrip">
+            <div class="container">
+                <!-- reused the same 'component' as above -->
+                <div id="sectoinTitle">
+                    <h1>02</h1>
+                    <span class="dot"></span>
+                    <h5>climb</h5>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum officiis laudantium saepe est, corrupti minus amet ut, perferendis temporibus necessitatibus a cum rerum
+                    laborum iste iure beatae, nam nisi
+                </p>
+            </div>
+        </div>
+
+        <div id="sectionHeader">
+            <div class="container">
+                <button onclick="toggleTab(1)">mountain 1</button>
+                <button onclick="toggleTab(2)">mountain 2</button>
+            </div>
+        </div>
+
+        <div id="sectionBody">
+            <div id="tabOneContent">
+                <div class="container">
+                    <div id="scheduleCard">
+                        <h3>schedule</h3>
+                        <table>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tabTwoContent">
+                <div class="container">
+                    <div id="scheduleCard">
+                        <h3>schedule</h3>
+                        <table>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>event name here</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ############## FOOTER ############## -->
+    <footer>
+        <div class="container">
+            <div class="brandComplex">
+                <img src="./assets/Logo.png" alt="losangeles mountains logo">
+                <div>
+                    <span>losanageles</span>
+                    <span>mountains</span>
+                </div>
+            </div>
+            <p>copyright &copy; 2016, all rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
