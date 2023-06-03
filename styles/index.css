@@ -180,9 +180,53 @@ header ol li a {
 }
 
 #sectionBody {
-  min-height: 400px;
+  height: auto;
   padding: 1rem 0;
   background-color: yellow;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #414f6b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .brandComplex {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .brandComplex span {
+  display: block;
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #63769d;
+  margin-left: 0.5rem;
+}
+footer p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #63769d;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Lato";
 }
 
 *,
