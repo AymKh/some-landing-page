@@ -352,4 +352,10 @@ body {
 
 .hideTab {
   display: none;
+}
+
+.selectedTab {
+  background-color: #b0b4be !important;
+  color: #414f6b !important;
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
