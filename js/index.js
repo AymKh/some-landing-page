@@ -11,3 +11,11 @@ const toggleTab = tabNumber => {
         tablOne.style.display = 'none';
     }
 }
+
+
+var glide = new Glide(".glide", {
+    type: "carousel",
+    focusAt: "center",
+    perView: 4
+});
+glide.mount();

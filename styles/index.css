@@ -180,11 +180,15 @@ header ol li a,
   gap: 0.4rem;
 }
 
-.card {
-  display: block;
+.glide__slide img {
   width: 100%;
+}
+
+.glide__slide {
   height: 135px;
-  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #tabSection {
