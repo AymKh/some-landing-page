@@ -3,6 +3,7 @@
 @import "./navbar";
 @import "./heroSection";
 @import "./historySection";
+@import "./carousel";
 @import "./tabSection";
 @import "./footer";
 
@@ -35,4 +36,10 @@ body {
 
 .hideTab {
     display: none;
+}
+
+.selectedTab {
+    background-color: #b0b4be !important;
+    color: #414f6b !important;
+    text-decoration: underline;
 }

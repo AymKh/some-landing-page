@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Landing Page</title>
+    <link rel="stylesheet" href="styles/glidejs/core.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
@@ -70,7 +71,28 @@
             </div>
         </div>
 
-        <div id="carrousel"></div>
+        <div id="carrousel">
+            <div class="container">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <img src="./assets/carousel/hiking.png" alt="image">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/carousel/mountain.png" alt="image">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/carousel/hiking.png" alt="image">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="./assets/carousel/mountain.png" alt="image">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ############## HISTORY SECTION ############## -->
@@ -92,8 +114,8 @@
 
         <div id="sectionHeader">
             <div class="container">
-                <button onclick="toggleTab(1)">mountain 1</button>
-                <button onclick="toggleTab(2)">mountain 2</button>
+                <button onclick="showTabOne()" id="tabTrigger_1">mountain 1</button>
+                <button onclick="showTabTwo()" id="tabTrigger_2">mountain 2</button>
             </div>
         </div>
 
@@ -174,6 +196,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.js"></script>
     <script src="js/index.js"></script>
 </body>
 
