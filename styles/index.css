@@ -279,6 +279,8 @@ header ol li a,
 #tabOneContent #scheduleCard table,
 #tabTwoContent #scheduleCard table {
   width: 100%;
+  font-weight: 300;
+  font-family: "Lato";
 }
 
 footer {
