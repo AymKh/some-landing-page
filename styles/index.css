@@ -272,6 +272,10 @@ header ol li a,
   min-height: var(--section-default-height);
 }
 
+#mobileTabs {
+  display: none;
+}
+
 #tabsHeaderStrip {
   width: 100%;
   background-color: #fff;
@@ -359,6 +363,41 @@ header ol li a,
   font-family: "Lato";
 }
 
+@media only screen and (max-width: 768px) {
+  #tabsHeaderStrip .container p {
+    font-size: 0.8rem !important;
+  }
+  #desktopTabs {
+    display: none;
+  }
+  #mobileTabs {
+    display: block;
+  }
+  #mobileTabs #tabTwoContent,
+  #mobileTabs #tabTwoContent {
+    display: block;
+  }
+  #mobileTabs .accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  #mobileTabs .active,
+  #mobileTabs .accordion:hover {
+    background-color: #ccc;
+  }
+  #mobileTabs .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+}
 footer {
   width: 100%;
   padding: 1rem 0;
