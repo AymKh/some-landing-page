@@ -5,6 +5,11 @@
   --section-default-height: 700px;
 }
 
+@media only screen and (max-width: 768px) {
+  :root {
+    --content-max-width: 700px !important;
+  }
+}
 header,
 #secondaryNavBar {
   width: 100%;
@@ -74,6 +79,13 @@ header ol li a,
   color: #414f6b;
 }
 
+@media only screen and (max-width: 768px) {
+  header,
+  #secondaryNavBar {
+    width: 100%;
+    padding: 1rem;
+  }
+}
 #heroSection {
   width: 100%;
   height: var(--section-default-height);
@@ -101,6 +113,11 @@ header ol li a,
   top: -7rem;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+}
 #historySection {
   width: 100%;
   min-height: var(--section-default-height);
@@ -137,8 +154,6 @@ header ol li a,
   height: 30px;
   background-color: #414f6b;
   position: absolute;
-  bottom: 39px;
-  right: -25px;
 }
 #sectoinTitle h5 {
   font-family: "Oswald";
@@ -147,6 +162,12 @@ header ol li a,
   color: #414f6b;
   text-transform: uppercase;
   position: absolute;
+}
+#sectoinTitle h1::after {
+  bottom: 39px;
+  right: -25px;
+}
+#sectoinTitle h5 {
   top: 87px;
   right: -110px;
 }
@@ -166,6 +187,61 @@ header ol li a,
   color: #000000;
 }
 
+@media only screen and (max-width: 768px) {
+  #historySection .container {
+    width: 100%;
+    padding: 1rem;
+  }
+  #sectoinTitle {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #sectoinTitle h1 {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    opacity: 0.502;
+    font-size: 8.5rem;
+    color: #414f6b;
+    font-weight: 700;
+    font-family: "Oswald";
+    position: relative;
+  }
+  #sectoinTitle h1:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #414f6b;
+    position: absolute;
+  }
+  #sectoinTitle h5 {
+    font-family: "Oswald";
+    font-size: 2rem;
+    font-weight: 700;
+    color: #414f6b;
+    text-transform: uppercase;
+    position: absolute;
+  }
+  #sectoinTitle h1::after {
+    bottom: 19px;
+    right: -30px;
+  }
+  #sectoinTitle h5 {
+    font-size: 1.5rem;
+    top: 13px;
+    right: -85px;
+  }
+  p {
+    display: block;
+    width: 100% !important;
+    margin: 0;
+    font-size: 1rem !important;
+  }
+}
 #carrousel {
   width: 100%;
   padding: 2rem 0;
@@ -327,6 +403,17 @@ footer p {
   font-family: "Lato";
 }
 
+@media only screen and (max-width: 768px) {
+  footer .container {
+    justify-content: space-between;
+  }
+  footer p {
+    display: block;
+    font-size: 0.9rem !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+}
 *,
 html {
   margin: 0;
@@ -340,6 +427,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .container {

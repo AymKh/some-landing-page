@@ -45,3 +45,12 @@ header,
         color: #414f6b;
     }
 }
+
+@media only screen and (max-width: 768px) {
+
+    header,
+    #secondaryNavBar {
+        width: 100%;
+        padding: 1rem;
+    }
+}

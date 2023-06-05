@@ -26,3 +26,10 @@
         top: -7rem;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 4rem !important;
+    }
+
+}
