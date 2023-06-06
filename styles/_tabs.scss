@@ -101,6 +101,10 @@
 
 @media only screen and (max-width: 768px) {
 
+    #tabSection {
+        min-height: auto;
+    }
+
     #tabsHeaderStrip .container p {
         font-size: .8rem !important;
     }
