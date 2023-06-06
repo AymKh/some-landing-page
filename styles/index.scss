@@ -2,6 +2,7 @@
 
 @import "./variables";
 @import "./mixins";
+@import "./author";
 @import "./navbar";
 @import "./heroSectoin";
 @import "./historySection";
@@ -14,6 +15,10 @@ html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
 }
 
 .showTab {

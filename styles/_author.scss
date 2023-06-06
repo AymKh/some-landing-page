@@ -1,0 +1,14 @@
+#authorModal {
+    img {
+        width: 200px;
+        border-radius: 50%;
+    }
+}
+
+#authorModalTrigger {
+    display: block;
+    position: fixed;
+    bottom: .5rem;
+    right: .5rem;
+    z-index: 99;
+}

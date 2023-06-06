@@ -3,6 +3,19 @@
   --section-default-height: 700px;
 }
 
+#authorModal img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+#authorModalTrigger {
+  display: block;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  z-index: 99;
+}
+
 li:first-of-type {
   margin-right: 2rem;
 }
@@ -361,6 +374,10 @@ html {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
 }
 
 .showTab {
