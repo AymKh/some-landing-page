@@ -1,0 +1,23 @@
+#heroSection {
+    height: var(--section-default-height);
+    background-image: url('../assets/hero_section_bg.png');
+    @include imageBackGround();
+
+
+    #heroSectionContent {
+        height: 100%;
+
+        h1 {
+            font-family: "Bebas Neue";
+            font-size: 7rem;
+            letter-spacing: .5rem;
+            line-height: 124px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #4d4d4d;
+
+            position: relative;
+            top: -7rem;
+        }
+    }
+}

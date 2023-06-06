@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Oswald:wght@200;400;600;700&display=swap");
+:root {
+  --section-default-height: 700px;
+}
+
+#heroSection {
+  height: var(--section-default-height);
+  background-image: url("../assets/hero_section_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#heroSection #heroSectionContent {
+  height: 100%;
+}
+#heroSection #heroSectionContent h1 {
+  font-family: "Bebas Neue";
+  font-size: 7rem;
+  letter-spacing: 0.5rem;
+  line-height: 124px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  position: relative;
+  top: -7rem;
+}
+
+#heroSection header nav ol,
+#heroSection header nav li,
+#heroSection header nav a {
+  color: #fefeff;
+}
+#heroSection header nav li:first-of-type {
+  margin-right: 2rem;
+}
+#heroSection header nav a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Lato";
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=index.css.map */
