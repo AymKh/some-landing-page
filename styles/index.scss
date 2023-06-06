@@ -1,13 +1,12 @@
-@import "./variables";
-@import "./shared";
-@import "./navbar";
-@import "./heroSection";
-@import "./historySection";
-@import "./carousel";
-@import "./tabSection";
-@import "./footer";
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Oswald:wght@200;400;600;700&display=swap');
+
+@import "./variables";
+@import "./mixins";
+@import "./navbar";
+@import "./heroSectoin";
+@import "./historySection";
+@import "./tabs";
+@import "./footer";
 
 *,
 html {
@@ -15,19 +14,6 @@ html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-
-body {
-    font-family: sans-serifs;
-    font-size: 1rem;
-    line-height: 1.5;
-    height: 100vh;
-}
-
-.container {
-    display: block;
-    width: var(--content-max-width);
-    margin: 0 auto;
 }
 
 .showTab {

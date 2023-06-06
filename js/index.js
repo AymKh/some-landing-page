@@ -1,3 +1,21 @@
+// ************************************
+// ************* CAROUSEL *************
+// ************************************
+
+const glide = new Glide(".glide", {
+    type: "carousel",
+    focusAt: "center",
+    perView: 4
+});
+
+glide.mount();
+
+
+
+// ************************************
+// *********** TABS SECTION ***********
+// ************************************
+
 const tablOne = document.querySelector('#tabOneContent');
 const tablTwo = document.querySelector('#tabTwoContent');
 const tabTwoTrigger = document.querySelector('#tabTrigger_2');
@@ -19,13 +37,25 @@ const showTabTwo = _ => {
     tabOneTrigger.classList.remove('selectedTab');
 }
 
-const glide = new Glide(".glide", {
-    type: "carousel",
-    focusAt: "center",
-    perView: 4
-});
-
-
-// ******
-glide.mount();
 showTabOne();
+
+
+
+// ************************************
+// ************* ACCORDION *************
+// ************************************
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}

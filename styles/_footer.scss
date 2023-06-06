@@ -1,13 +1,5 @@
 footer {
-    width: 100%;
-    padding: 1rem 0;
     background-color: #414f6b;
-    @include flex();
-
-    .container {
-        @include flex();
-        align-items: center;
-    }
 
     .brandComplex {
         @include complexBranding();

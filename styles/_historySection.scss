@@ -1,28 +1,41 @@
 #historySection {
-    width: 100%;
     min-height: var(--section-default-height);
-    padding: 2rem 0;
     background-image: url('../assets/histry_section.png');
     @include imageBackGround();
-    position: relative
+    position: relative;
 }
 
 #sectoinTitle {
-    @include sectionTitle();
+    @include sectionTitle(s);
 }
 
-#sectionContent {
+#carrousel {
     width: 100%;
-    display: block;
-    margin-top: .5rem;
+    background-color: #414f6bdc;
+    height: 200px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #historySection {
+        .container {
+            width: 100%;
+            padding: 1rem
+        }
+    }
+
+    #sectoinTitle {
+        @include sectionTitle(0);
+    }
 
     p {
-        width: 1000px;
-        margin: auto;
-        font-weight: 300;
-        font-family: "Lato";
-        font-size: 1rem;
-        line-height: 24px;
-        color: #000000;
+        display: block;
+        width: 100% !important;
+        margin: 0;
+        font-size: 1rem !important;
     }
 }

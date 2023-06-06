@@ -1,44 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Oswald:wght@200;400;600;700&display=swap");
 :root {
-  --content-max-width: 1200px;
-  --navbar-height: 65px;
   --section-default-height: 700px;
 }
 
-header,
-#secondaryNavBar {
-  width: 100%;
-  height: var(----navbar-height);
-  padding-top: 0.5rem;
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+li:first-of-type {
+  margin-right: 2rem;
 }
-header .container,
-#secondaryNavBar .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-header ol,
-#secondaryNavBar ol {
-  margin: 0;
-  width: 140px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-header ol li,
-#secondaryNavBar ol li {
+
+#heroSection header nav ol,
+#heroSection header nav li,
+#heroSection header nav a {
   color: #fefeff;
 }
-header ol li a,
-#secondaryNavBar ol li a {
-  color: #fefeff;
+#heroSection header nav a {
   font-size: 12px;
   letter-spacing: 1px;
   line-height: 20px;
@@ -49,7 +23,6 @@ header ol li a,
 }
 
 #secondaryNavBar {
-  padding: 0.8rem 0;
   background-color: #fff;
 }
 #secondaryNavBar .brandComplex {
@@ -69,27 +42,22 @@ header ol li a,
   color: #63769d;
   margin-left: 0.5rem;
 }
-#secondaryNavBar nav ol li,
+#secondaryNavBar nav ol,
 #secondaryNavBar nav ol li a {
   color: #414f6b;
 }
 
 #heroSection {
-  width: 100%;
   height: var(--section-default-height);
-  z-index: 1;
   background-image: url("../assets/hero_section_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-#heroSection .flex {
+#heroSection #heroSectionContent {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-#heroSection h1 {
+#heroSection #heroSectionContent h1 {
   font-family: "Bebas Neue";
   font-size: 7rem;
   letter-spacing: 0.5rem;
@@ -101,10 +69,13 @@ header ol li a,
   top: -7rem;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+}
 #historySection {
-  width: 100%;
   min-height: var(--section-default-height);
-  padding: 2rem 0;
   background-image: url("../assets/histry_section.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -137,8 +108,6 @@ header ol li a,
   height: 30px;
   background-color: #414f6b;
   position: absolute;
-  bottom: 39px;
-  right: -25px;
 }
 #sectoinTitle h5 {
   font-family: "Oswald";
@@ -147,53 +116,87 @@ header ol li a,
   color: #414f6b;
   text-transform: uppercase;
   position: absolute;
-  top: 87px;
+}
+#sectoinTitle h1::after {
+  bottom: 19px;
+  right: -25px;
+}
+#sectoinTitle h5 {
+  top: 77px;
   right: -110px;
-}
-
-#sectionContent {
-  width: 100%;
-  display: block;
-  margin-top: 0.5rem;
-}
-#sectionContent p {
-  width: 1000px;
-  margin: auto;
-  font-weight: 300;
-  font-family: "Lato";
-  font-size: 1rem;
-  line-height: 24px;
-  color: #000000;
 }
 
 #carrousel {
   width: 100%;
-  padding: 2rem 0;
   background-color: rgba(65, 79, 107, 0.862745098);
   height: 200px;
   position: absolute;
   bottom: 0;
-}
-#carrousel .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.4rem;
+  left: 0;
 }
 
-.glide__slide img {
-  width: 100%;
+@media only screen and (max-width: 768px) {
+  #historySection .container {
+    width: 100%;
+    padding: 1rem;
+  }
+  #sectoinTitle {
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #sectoinTitle h1 {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    opacity: 0.502;
+    font-size: 8.5rem;
+    color: #414f6b;
+    font-weight: 700;
+    font-family: "Oswald";
+    position: relative;
+  }
+  #sectoinTitle h1:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #414f6b;
+    position: absolute;
+  }
+  #sectoinTitle h5 {
+    font-family: "Oswald";
+    font-size: 2rem;
+    font-weight: 700;
+    color: #414f6b;
+    text-transform: uppercase;
+    position: absolute;
+  }
+  #sectoinTitle h1::after {
+    bottom: 10px;
+    right: -30px;
+  }
+  #sectoinTitle h5 {
+    font-size: 1.5rem;
+    top: 8px;
+    right: -85px;
+  }
+  p {
+    display: block;
+    width: 100% !important;
+    margin: 0;
+    font-size: 1rem !important;
+  }
 }
-
-.glide__slide {
-  height: 135px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 #tabSection {
   width: 100%;
   min-height: var(--section-default-height);
+}
+
+#mobileTabs {
+  display: none;
 }
 
 #tabsHeaderStrip {
@@ -283,21 +286,46 @@ header ol li a,
   font-family: "Lato";
 }
 
-footer {
-  width: 100%;
-  padding: 1rem 0;
-  background-color: #414f6b;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+@media only screen and (max-width: 768px) {
+  #tabSection {
+    min-height: auto;
+  }
+  #tabsHeaderStrip .container p {
+    font-size: 0.8rem !important;
+  }
+  #desktopTabs {
+    display: none;
+  }
+  #mobileTabs {
+    display: block;
+  }
+  #mobileTabs #tabTwoContent,
+  #mobileTabs #tabTwoContent {
+    display: block;
+  }
+  #mobileTabs .accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  #mobileTabs .active,
+  #mobileTabs .accordion:hover {
+    background-color: #ccc;
+  }
+  #mobileTabs .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 }
-footer .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
+footer {
+  background-color: #414f6b;
 }
 footer .brandComplex {
   width: -moz-fit-content;
@@ -333,19 +361,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: sans-serifs;
-  font-size: 1rem;
-  line-height: 1.5;
-  height: 100vh;
-}
-
-.container {
-  display: block;
-  width: var(--content-max-width);
-  margin: 0 auto;
 }
 
 .showTab {

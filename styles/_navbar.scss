@@ -1,46 +1,34 @@
-header,
-#secondaryNavBar {
-    width: 100%;
-    height: var(----navbar-height);
-    padding-top: .5rem;
-    background-color: transparent;
-    @include flex;
+li:first-of-type {
+    margin-right: 2rem;
+}
 
-    .container {
-        @include flex;
+#heroSection header nav {
+
+    ol,
+    li,
+    a {
+        color: #fefeff;
     }
 
-    ol {
-        margin: 0;
-        width: 140px;
-        @include flex;
-
-        li {
-            color: #fefeff;
-
-            a {
-                color: #fefeff;
-                font-size: 12px;
-                letter-spacing: 1px;
-                line-height: 20px;
-                text-transform: uppercase;
-                font-weight: 900;
-                font-style: italic;
-                font-family: "Lato";
-            }
-        }
+    a {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-style: italic;
+        font-family: "Lato";
     }
 }
 
 #secondaryNavBar {
-    padding: .8rem 0;
     background-color: #fff;
 
     .brandComplex {
         @include complexBranding();
     }
 
-    nav ol li,
+    nav ol,
     nav ol li a {
         color: #414f6b;
     }
