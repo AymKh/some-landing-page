@@ -3,28 +3,6 @@
   --section-default-height: 700px;
 }
 
-#heroSection {
-  height: var(--section-default-height);
-  background-image: url("../assets/hero_section_bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-#heroSection #heroSectionContent {
-  height: 100%;
-}
-#heroSection #heroSectionContent h1 {
-  font-family: "Bebas Neue";
-  font-size: 7rem;
-  letter-spacing: 0.5rem;
-  line-height: 124px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #4d4d4d;
-  position: relative;
-  top: -7rem;
-}
-
 li:first-of-type {
   margin-right: 2rem;
 }
@@ -67,6 +45,89 @@ li:first-of-type {
 #secondaryNavBar nav ol,
 #secondaryNavBar nav ol li a {
   color: #414f6b;
+}
+
+#heroSection {
+  height: var(--section-default-height);
+  background-image: url("../assets/hero_section_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#heroSection #heroSectionContent {
+  height: 100%;
+}
+#heroSection #heroSectionContent h1 {
+  font-family: "Bebas Neue";
+  font-size: 7rem;
+  letter-spacing: 0.5rem;
+  line-height: 124px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  position: relative;
+  top: -7rem;
+}
+
+#historySection {
+  min-height: var(--section-default-height);
+  background-image: url("../assets/histry_section.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#sectoinTitle {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#sectoinTitle h1 {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  opacity: 0.502;
+  font-size: 8.5rem;
+  color: #414f6b;
+  font-weight: 700;
+  font-family: "Oswald";
+  position: relative;
+}
+#sectoinTitle h1:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #414f6b;
+  position: absolute;
+}
+#sectoinTitle h5 {
+  font-family: "Oswald";
+  font-size: 2rem;
+  font-weight: 700;
+  color: #414f6b;
+  text-transform: uppercase;
+  position: absolute;
+}
+#sectoinTitle h1::after {
+  bottom: 19px;
+  right: -25px;
+}
+#sectoinTitle h5 {
+  top: 77px;
+  right: -110px;
+}
+
+#carrousel {
+  width: 100%;
+  background-color: rgba(65, 79, 107, 0.862745098);
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 *,

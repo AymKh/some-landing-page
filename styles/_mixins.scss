@@ -21,3 +21,66 @@
         margin-left: .5rem;
     }
 }
+
+@mixin sectionTitle($mobileView) {
+    position: relative;
+    width: fit-content;
+
+    h1 {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+
+        opacity: 0.502;
+        font-size: 8.5rem;
+        color: #414f6b;
+        font-weight: 700;
+        font-family: "Oswald";
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: #414f6b;
+            position: absolute;
+        }
+    }
+
+    h5 {
+        font-family: "Oswald";
+        font-size: 2rem;
+        font-weight: 700;
+        color: #414f6b;
+        text-transform: uppercase;
+
+        position: absolute;
+    }
+
+    @if($mobileView ==0) {
+        h1::after {
+            bottom: 19px;
+            right: -30px;
+        }
+
+        h5 {
+            font-size: 1.5rem;
+            top: 13px;
+            right: -85px;
+        }
+    }
+
+    @else {
+        h1::after {
+            bottom: 19px;
+            right: -25px;
+        }
+
+        h5 {
+            top: 77px;
+            right: -110px;
+        }
+    }
+
+}
