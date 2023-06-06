@@ -1,0 +1,18 @@
+footer {
+    background-color: #414f6b;
+
+    .brandComplex {
+        @include complexBranding();
+    }
+
+    p {
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #63769d;
+        font-weight: 900;
+        font-style: italic;
+        font-family: "Lato";
+    }
+}
