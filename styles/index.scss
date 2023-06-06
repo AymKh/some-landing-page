@@ -5,6 +5,7 @@
 @import "./navbar";
 @import "./heroSectoin";
 @import "./historySection";
+@import "./tabs";
 @import "./footer";
 
 *,
@@ -13,4 +14,18 @@ html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+.showTab {
+    display: block;
+}
+
+.hideTab {
+    display: none;
+}
+
+.selectedTab {
+    background-color: #b0b4be !important;
+    color: #414f6b !important;
+    text-decoration: underline;
 }

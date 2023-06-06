@@ -130,6 +130,137 @@ li:first-of-type {
   left: 0;
 }
 
+#tabSection {
+  width: 100%;
+  min-height: var(--section-default-height);
+}
+
+#mobileTabs {
+  display: none;
+}
+
+#tabsHeaderStrip {
+  width: 100%;
+  background-color: #fff;
+}
+#tabsHeaderStrip .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#tabsHeaderStrip .container #sectoinTitle {
+  width: auto;
+  display: block;
+  margin-right: 8rem;
+}
+#tabsHeaderStrip .container p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Lato";
+}
+
+#sectionHeader {
+  width: 100%;
+  height: 40px;
+  background-color: #414f6b;
+}
+#sectionHeader button {
+  height: 40px;
+  padding: 0.2rem 1rem;
+  font-weight: 700;
+  font-family: "Oswald";
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  color: #b0b4be;
+  background-color: transparent;
+  cursor: pointer;
+}
+#sectionHeader button:hover {
+  background-color: #b0b4be;
+  color: #414f6b;
+  text-decoration: underline;
+}
+
+#tabOneContent {
+  background-image: url("../assets/tab_01.png");
+}
+
+#tabTwoContent {
+  background-image: url("../assets/tab_02.png");
+  display: none;
+}
+
+#tabOneContent,
+#tabTwoContent {
+  padding-top: 5rem;
+  width: 100%;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#tabOneContent #scheduleCard,
+#tabTwoContent #scheduleCard {
+  width: 352px;
+  height: 229px;
+  background-color: rgba(255, 255, 255, 0.631372549);
+  padding: 1rem;
+  z-index: 99;
+}
+#tabOneContent #scheduleCard h3,
+#tabTwoContent #scheduleCard h3 {
+  font-family: "Oswald";
+  color: #414f6b;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#tabOneContent #scheduleCard table,
+#tabTwoContent #scheduleCard table {
+  width: 100%;
+  font-weight: 300;
+  font-family: "Lato";
+}
+
+@media only screen and (max-width: 768px) {
+  #tabsHeaderStrip .container p {
+    font-size: 0.8rem !important;
+  }
+  #desktopTabs {
+    display: none;
+  }
+  #mobileTabs {
+    display: block;
+  }
+  #mobileTabs #tabTwoContent,
+  #mobileTabs #tabTwoContent {
+    display: block;
+  }
+  #mobileTabs .accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  #mobileTabs .active,
+  #mobileTabs .accordion:hover {
+    background-color: #ccc;
+  }
+  #mobileTabs .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+}
 footer {
   background-color: #414f6b;
 }
@@ -167,4 +298,18 @@ html {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+.showTab {
+  display: block;
+}
+
+.hideTab {
+  display: none;
+}
+
+.selectedTab {
+  background-color: #b0b4be !important;
+  color: #414f6b !important;
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
