@@ -25,13 +25,14 @@
   top: -7rem;
 }
 
+li:first-of-type {
+  margin-right: 2rem;
+}
+
 #heroSection header nav ol,
 #heroSection header nav li,
 #heroSection header nav a {
   color: #fefeff;
-}
-#heroSection header nav li:first-of-type {
-  margin-right: 2rem;
 }
 #heroSection header nav a {
   font-size: 12px;
@@ -41,6 +42,31 @@
   font-weight: 900;
   font-style: italic;
   font-family: "Lato";
+}
+
+#secondaryNavBar {
+  background-color: #fff;
+}
+#secondaryNavBar .brandComplex {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#secondaryNavBar .brandComplex span {
+  display: block;
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #63769d;
+  margin-left: 0.5rem;
+}
+#secondaryNavBar nav ol,
+#secondaryNavBar nav ol li a {
+  color: #414f6b;
 }
 
 *,

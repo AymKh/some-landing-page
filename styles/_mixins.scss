@@ -3,3 +3,21 @@
     background-position: center;
     background-size: cover;
 }
+
+@mixin complexBranding() {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+        display: block;
+        font-family: "Bebas Neue";
+        font-size: 21px;
+        letter-spacing: 0px;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: #63769d;
+        margin-left: .5rem;
+    }
+}

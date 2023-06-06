@@ -1,13 +1,13 @@
+li:first-of-type {
+    margin-right: 2rem;
+}
+
 #heroSection header nav {
 
     ol,
     li,
     a {
         color: #fefeff;
-    }
-
-    li:first-of-type {
-        margin-right: 2rem;
     }
 
     a {
@@ -18,5 +18,18 @@
         font-weight: 900;
         font-style: italic;
         font-family: "Lato";
+    }
+}
+
+#secondaryNavBar {
+    background-color: #fff;
+
+    .brandComplex {
+        @include complexBranding();
+    }
+
+    nav ol,
+    nav ol li a {
+        color: #414f6b;
     }
 }
